@@ -50,7 +50,7 @@ def totp(
 
 def main() -> None:
 
-    print(totp(key=sys.stdin.readline().strip()))
+    print(totp(key=sys.stdin.readline().replace(' ', '').strip().upper()))
 
 
 def test() -> None:
